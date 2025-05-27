@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
-[Route("user")]
+[Route("api/user")]
 public class AuthController : ControllerBase
 {
     [HttpGet("ping")]

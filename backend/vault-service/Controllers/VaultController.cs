@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
-[Route("api/auth")]
+[Route("api/vault")]
 public class AuthController : ControllerBase
 {
     [HttpGet("ping")]
-    public IActionResult Ping() => Ok("AuthService OK");
+    public IActionResult Ping() => Ok("VaultService OK");
 }
