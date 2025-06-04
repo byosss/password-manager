@@ -4,7 +4,7 @@ This is an **early-stage** password manager built with a **microservices archite
 - YARP (Reverse Proxy)
 - Blazor (frontend)
 - ASP.NET (backend)
-- SQL Server
+- SQLite
 
 ## Project Structure
 
@@ -22,7 +22,6 @@ password-manager/
 ## Prerequisites
 
 - .NET 9 SDK
-- SQL Server (local or remote)
 
 ## Getting Started
 
@@ -35,16 +34,7 @@ dotnet build
 
 ## Endpoints
 
-### API Gateway
-
 - API Gateway base URL: `http://localhost:80` or `https://localhost:443`
-- User Service: `/api/user`
-- Vault Service: `/api/vault`
-
-### Frontend
-
-- Frontend base URL: `http://localhost:5080` or `https://localhost:7443`
-
-## Postman
-
-You can use Postman to test the API endpoints. Import the `postman_collection.json` file to get started with the predefined requests.
+- Frontend base URL: `http://localhost:3000`
+- User Service: `http://localhost:5000/api/user`
+- Vault Service: `http://localhost:5001/api/vault`
