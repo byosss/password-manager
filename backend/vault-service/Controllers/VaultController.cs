@@ -4,6 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 [Route("api/[controller]")]
 public class VaultController : ControllerBase
 {
-    [HttpGet("ping")]
-    public IActionResult Ping() => Ok("VaultService OK");
+    [HttpGet("health")]
+    public IActionResult Health() => Ok("VaultService OK");
 }

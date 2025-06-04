@@ -4,6 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 [Route("api/[controller]")]
 public class UserController : ControllerBase
 {
-    [HttpGet("ping")]
-    public IActionResult Ping() => Ok("UserService OK");
+    [HttpGet("health")]
+    public IActionResult Health() => Ok("UserService OK");
 }
