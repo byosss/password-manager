@@ -12,7 +12,6 @@ This is an **early-stage** password manager built with a **microservices archite
 password-manager/
 ├── api-gateway/            # API Gateway (YARP)
 ├── backend/
-│   ├── auth-service/       # Auth Management
 │   ├── user-service/       # Users Management
 │   └── vault-service/      # Secrets Management
 ├── frontend/               # Blazor WebAssembly
@@ -38,8 +37,7 @@ dotnet build
 
 ### API Gateway
 
-- API Gateway base URL: `http://localhost:5000` or `https://localhost:7000`
-- Auth Service: `/api/auth`
+- API Gateway base URL: `http://localhost:80` or `https://localhost:443`
 - User Service: `/api/user`
 - Vault Service: `/api/vault`
 

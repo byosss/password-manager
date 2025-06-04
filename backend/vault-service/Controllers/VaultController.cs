@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
-[Route("vault")]
-public class AuthController : ControllerBase
+[Route("api/[controller]")]
+public class VaultController : ControllerBase
 {
     [HttpGet("ping")]
     public IActionResult Ping() => Ok("VaultService OK");

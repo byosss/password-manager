@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
-[Route("user")]
-public class AuthController : ControllerBase
+[Route("api/[controller]")]
+public class UserController : ControllerBase
 {
     [HttpGet("ping")]
     public IActionResult Ping() => Ok("UserService OK");
